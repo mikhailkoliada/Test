@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: call
         run: |
-          sudo dpkg -L libffi
+          sudo dpkg-query -L libffi
