@@ -10,6 +10,4 @@ jobs:
     steps:
       - name: call
         run: |
-          npm install karma
-          npm install -g @angular/cli@latest
-          ng test --watch=false --project prd --browsers=ChromeHeadless
+          sudo zcat /proc/config.gz | grep "CONFIG_SECURITY_FILE_CAPABILITIES"
