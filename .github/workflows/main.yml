@@ -11,4 +11,5 @@ jobs:
       - name: call
         run: |
           npm install karma
+          npm install -g @angular/cli@latest
           ng test --watch=false --project prd --browsers=ChromeHeadless
