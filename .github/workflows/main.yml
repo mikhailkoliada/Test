@@ -11,4 +11,4 @@ jobs:
       - name: call
         run: |
           sudo apt-get install libffi-dev
-          sudo dpkg-query -L libffi
+          sudo dpkg-query -L libffi-dev
