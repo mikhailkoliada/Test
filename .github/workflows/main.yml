@@ -5,10 +5,9 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-22.04
+    runs-on: macos-latest
 
     steps:
       - name: call
         run: |
-          sudo apt-get install libffi-dev
-          sudo dpkg-query -L libffi-dev
+          ls
