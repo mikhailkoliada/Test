@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: call
         run: |
-          ls
+          lz4
