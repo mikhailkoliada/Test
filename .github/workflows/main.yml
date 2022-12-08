@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: call
         run: |
-          ls -la
+          dpkg -l libgtk2.0-0
