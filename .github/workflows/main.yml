@@ -5,9 +5,9 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: call
         run: |
-          dpkg -l libgtk2.0-0
+          ghcup
