@@ -10,4 +10,5 @@ jobs:
     steps:
       - name: call
         run: |
-          ghcup
+          ghcup list
+        
