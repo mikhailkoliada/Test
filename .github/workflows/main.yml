@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: call
         run: |
-          $verList = (ghcup list -t ghc -r).split(' ')[1]
+          $verList = (ghcup list -t ghc -r)
           foreach( $Version in $VerList) { Write-Host $Version }
         
