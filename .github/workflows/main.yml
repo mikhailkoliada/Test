@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: call
         run: |
-          ghcup list -t ghc -r | $_.split(' ')[1]
+          $crudeList = ghcup list -t ghc -r
+          $crideList.split(' ')[2]
         
