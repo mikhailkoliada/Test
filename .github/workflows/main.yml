@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: call
         run: |
-          (ghcup list -t ghc -r).split(' ')[2]
+          (ghcup list -t ghc -r).split(' ')[1]
         
