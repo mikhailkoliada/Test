@@ -11,5 +11,5 @@ jobs:
       - name: call
         run: |
           $crudeList = ghcup list -t ghc -r
-          $crideList.split(' ')[2]
+          $crudeList.split(' ')[2]
         
