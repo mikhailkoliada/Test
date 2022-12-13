@@ -10,10 +10,5 @@ jobs:
     steps:
       - name: call
         run: |
-          $ODataQuery = '$filter=(Title eq ''ghc'') and (IsPrerelease eq false)&$orderby=Version desc'
-          $Url = "https://community.chocolatey.org/api/v2/Packages()?$ODataQuery"
-          $ChocoVersionsOutput = [Version[]](Invoke-RestMethod -Uri $Url).properties.Version
-          $LatestMajorMinor = $ChocoVersionsOutput | Group-Object { $_.ToString(2) } | Sort-Object { [Version]$_.Name } | Select-Object -last 3
-          $VersionsList = $LatestMajorMinor | ForEach-Object { $_.Group | Select-Object -First 1 } | Sort-Object
-          ForEach ($version in $VersionsList) { ghcup install ghc $version }
+          curl https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.31-winx64.zip
         
