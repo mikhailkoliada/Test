@@ -3,11 +3,13 @@ name: test
 on: [push]
 
 jobs:
-  build:
-
+  upload-lwc-converage:
+    name: Test
     runs-on: ubuntu-latest
+    container:
+      image: alpine
 
     steps:
-      - name: call
+      - name: Checkout
         uses: actions/checkout@v3
-        
+
