@@ -16,5 +16,6 @@ jobs:
       - name: git clone
         run: | 
           git clone --depth=1 https://github.com/actions/runner-images
-          ls
+          ls -la
+          ls -la runner-images
 
