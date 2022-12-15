@@ -18,4 +18,17 @@ jobs:
           git clone --depth=1 https://github.com/actions/runner-images
           ls -la
           ls -la runner-images
+          
+  runner_check:
+    name: checkout test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Check the data
+        run: ls $GITHUB_WORKSPACE
+          
+          
 
