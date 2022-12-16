@@ -9,7 +9,9 @@ jobs:
 
     steps:
       - name: test
-        run: choco install postgresql -y --params '/Password:root /NoPath' --params-global --version=14.6.1
+        run: |
+          choco uninstall postgresql
+          choco install postgresql -y --params '/Password:root /NoPath' --params-global --version=14.6.1
 
           
 
