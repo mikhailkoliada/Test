@@ -10,8 +10,9 @@ jobs:
     steps:
       - name: test
         run: |
-          choco uninstall postgresql
-          choco install postgresql -y --params '/Password:root /NoPath' --params-global --version=14.6.1
+          [System.Text.Encoding]::Default
+        shell: pwsh
+
 
           
 
