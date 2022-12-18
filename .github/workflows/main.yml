@@ -11,6 +11,7 @@ jobs:
       - name: test
         run: |
           [System.Text.Encoding]::Default
+          wsl --install -d Ubuntu
           wslconfig.exe /list
         shell: pwsh
 
