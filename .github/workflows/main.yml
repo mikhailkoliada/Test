@@ -5,13 +5,12 @@ on: [push]
 jobs:
   upload-lwc-converage:
     name: Test
-    runs-on: macos-11
+    runs-on: windows-latest
 
     steps:
       - name: test
         run: |
-          ls -la /usr/local/bin/python3
-          file /usr/local/bin/2to3 
+          openssl version
 
 
           
