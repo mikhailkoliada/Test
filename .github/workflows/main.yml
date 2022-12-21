@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
-          file /Library/Frameworks/Python.framework/Versions/Current/bin
+          ls /Library/Frameworks/Python.framework/Versions/Current/bin
 
 
           
