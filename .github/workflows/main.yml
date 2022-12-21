@@ -12,7 +12,7 @@ jobs:
         run: |
           whoami
           id
-          getent group ntp
+          sudo getent group ntp
 
 
           
