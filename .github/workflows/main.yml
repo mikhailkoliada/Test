@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
-          ls /Library/Frameworks/Python.framework/Versions/Current/bin
+          file /usr/local/bin/2to3 
 
 
           
