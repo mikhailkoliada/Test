@@ -11,8 +11,6 @@ jobs:
       - name: test
         run: |
           file /Library/Frameworks/Python.framework/Versions/Current/bin
-           brew update
-            brew upgrade
 
 
           
