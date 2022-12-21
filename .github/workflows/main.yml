@@ -10,6 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
+          brew ls python@3.10
           file /usr/local/bin/2to3 
 
 
