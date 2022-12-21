@@ -5,12 +5,14 @@ on: [push]
 jobs:
   upload-lwc-converage:
     name: Test
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: test
         run: |
-          openssl version
+          whoami
+          id
+          getent group ntp
 
 
           
