@@ -5,15 +5,13 @@ on: [push]
 jobs:
   upload-lwc-converage:
     name: Test
-    runs-on: windows-2022
+    runs-on: macos-11
 
     steps:
       - name: test
         run: |
-          [System.Text.Encoding]::Default
-          wsl --install -d Ubuntu
-          wslconfig.exe /list
-        shell: pwsh
+           brew update
+            brew upgrade
 
 
           
