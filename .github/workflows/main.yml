@@ -5,14 +5,13 @@ on: [push]
 jobs:
   upload-lwc-converage:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
       - name: test
         run: |
           whoami
           id
-          sudo getent group ntp
 
 
           
