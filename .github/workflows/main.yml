@@ -11,6 +11,7 @@ jobs:
       - name: test
         run: |
           wsl --update
+          wsl --status
 
 
           
