@@ -5,13 +5,12 @@ on: [push]
 jobs:
   upload-lwc-converage:
     name: Test
-    runs-on: ubuntu-18.04
+    runs-on: windows-2022
 
     steps:
       - name: test
         run: |
-          whoami
-          id
+          wsl --status
 
 
           
