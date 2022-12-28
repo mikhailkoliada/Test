@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: test
         run: |
+          wsl --install
           wsl --update
-          wsl --set-default-version 1
           wsl --version
 
 
