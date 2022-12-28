@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
-          wsl --status
+          wsl --update
 
 
           
