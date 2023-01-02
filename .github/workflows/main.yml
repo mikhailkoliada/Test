@@ -10,9 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
-          wsl --install
-          wsl --update
-          wsl --version
+          ls C:\msys64
 
 
           
