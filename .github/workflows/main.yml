@@ -8,10 +8,12 @@ jobs:
     runs-on: windows-2022
 
     steps:
+      - uses: actions/checkout@v3
       - name: test
         run: |
-          C:\msys64\usr\bin\bash -lc "pacman --noconfirm -S mingw-w64-ucrt-x86_64-gcc"
-          ls C:\msys64\ucrt64\bin
+          gcc -V
+          gcc hello.c -o hello
+          ./hello
 
 
           
