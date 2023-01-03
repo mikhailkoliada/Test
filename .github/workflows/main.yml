@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: test
         run: |
-          ls C:\msys64
+          ls C:\msys64\ucrt64\bin
           C:\msys64\usr\bin\bash -lc "pacman --noconfirm -Syuu"
 
 
